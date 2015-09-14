@@ -51,5 +51,5 @@ gulp.task('doc', function () {
     .pipe(esdoc({ destination: './dist/docs' }));
 });
 
-gulp.task('prepublish', ['nsp', 'babel']);
+gulp.task('prepublish', ['babel']);
 gulp.task('default', ['static', 'test']);

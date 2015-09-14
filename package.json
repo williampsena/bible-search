@@ -2,13 +2,12 @@
   "name": "bible-search",
   "version": "1.0.0",
   "description": "A client Bible Search Api wrapper for NodeJs https://pt-br.bibles.org/pages/api",
-  "homepage": "www.coisadeprogramador.com.br",
-  "repository": "williampsena/bible-search",
-  "author": {
-    "name": "William Sena",
-    "email": "williampsena@gmail.com",
-    "url": "www.coisadeprogramador.com.br"
+  "homepage": "http://www.coisadeprogramador.com.br",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williampsena/bible-search.git"
   },
+  "author": "William Sena <williampsena@gmail.com> (www.coisadeprogramador.com.br)",
   "files": [
     "dist"
   ],
@@ -25,11 +24,11 @@
     "gulp-eslint": "^0.15.0",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-istanbul": "^0.9.0",
-    "gulp-istanbul-report": "0.0.1",
     "gulp-jsdoc": "^0.1.4",
     "gulp-mocha": "^2.0.0",
     "gulp-nsp": "^0.4.5",
     "gulp-plumber": "^1.0.0",
+    "mocha": "^2.3.2",
     "q": "^1.4.1",
     "request": "^2.61.0",
     "should": "^7.1.0"
@@ -38,5 +37,28 @@
     "prepublish": "gulp prepublish",
     "test": "mocha --compilers js:babel/register -R spec --ui bdd --recursive --timeout 30000"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/williampsena/bible-search/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "gulp-babel": "^5.2.1",
+    "gulp": "^3.9.0",
+    "gulp-esdoc": "^0.0.4",
+    "gulp-eslint": "^0.15.0",
+    "colors": "^1.1.2",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-copy": "^0.0.2",
+    "gulp-nsp": "^0.4.5",
+    "babel-core": "^5.8.23",
+    "request": "^2.61.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-mocha": "^2.1.3",
+    "should": "^7.1.0",
+    "q": "^1.4.1",
+    "mocha": "^2.3.2"
+  }
 }
