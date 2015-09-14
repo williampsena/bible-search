@@ -8,16 +8,7 @@
 $ npm install --save bible-search
 ```
 
-
 ## Usage
-
-Before you run tests, you must create a file named: config.auth.json, example:
-
-```
-{
-  "bibleApiKey": ""
-}
-```
 
 
 ```js
@@ -88,6 +79,14 @@ bibleApi.search.find({
 ```
 
 ## Test
+
+Before you run tests, you must create a file named: config.auth.json, example:
+
+```
+{
+  "bibleApiKey": ""
+}
+```
 
 ```
 npm test
