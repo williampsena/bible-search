@@ -100,7 +100,7 @@ Apache-2.0 © [William Sena](www.coisadeprogramador.com.br)
 
 ## TODO
 
-- Correct English Wrongs! :)
-- Improve Documentation (ESDocs)
-- Support Browserify
-- Refactoring
+- Correct grammar mistakes! :)
+- Improve the documentation (ESDocs)
+- Support browserify
+- Refactoring ;)
