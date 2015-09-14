@@ -127,3 +127,7 @@ Apache-2.0 © [William Sena](www.coisadeprogramador.com.br)
 - Improve the documentation (ESDocs)
 - Support browserify
 - Refactoring ;)
+
+## Thanks :)
+
+https://github.com/yeoman/generator-node
