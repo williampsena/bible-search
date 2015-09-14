@@ -115,10 +115,10 @@ Apache-2.0 © [William Sena](www.coisadeprogramador.com.br)
 
 [npm-image]: https://badge.fury.io/js/bible-search.svg
 [npm-url]: https://npmjs.org/package/bible-search
-[travis-image]: https://travis-ci.org/willsenabr/bible-search.svg?branch=master
-[travis-url]: https://travis-ci.org/willsenabr/bible-search
-[daviddm-image]: https://david-dm.org/willsenabr/bible-search.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/willsenabr/bible-search
+[travis-image]: https://travis-ci.org/williampsena/bible-search.svg?branch=master
+[travis-url]: https://travis-ci.org/williampsena/bible-search
+[daviddm-image]: https://david-dm.org/williampsena/bible-search.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/williampsena/bible-search
 
 ## TODO
 
