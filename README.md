@@ -87,6 +87,29 @@ bibleApi.search.find({
 });
 ```
 
+## Test
+
+```
+npm test
+gulp test
+```
+
+## Build
+
+```
+gulp
+```
+
+Lib output: ./dist/
+
+## Generate ESDoc
+
+```
+gulp doc
+``` 
+
+Documentation output: ./dist/docs
+
 ## License
 
 Apache-2.0 © [William Sena](www.coisadeprogramador.com.br)
