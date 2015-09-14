@@ -80,7 +80,7 @@ bibleApi.search.find({
 
 ## Test
 
-Before you run tests, you must create a file named: config.auth.json, example:
+Before you run tests, you must create a file named: config-auth.json, example:
 
 ```
 {
