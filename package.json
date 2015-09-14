@@ -1,0 +1,42 @@
+{
+  "name": "bible-search",
+  "version": "0.0.0",
+  "description": "A client Bible Search Api wrapper for NodeJs https://pt-br.bibles.org/pages/api",
+  "homepage": "www.coisadeprogramador.com.br",
+  "repository": "willsenabr/bible-search",
+  "author": {
+    "name": "William Sena",
+    "email": "williampsena@gmail.com",
+    "url": "www.coisadeprogramador.com.br"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "bible",
+    "api"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "gulp": "^3.6.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-esdoc": "0.0.4",
+    "gulp-eslint": "^0.15.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-istanbul-report": "0.0.1",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^0.4.5",
+    "gulp-plumber": "^1.0.0",
+    "q": "^1.4.1",
+    "request": "^2.61.0",
+    "should": "^7.1.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "mocha --compilers js:babel/register -R spec --ui bdd --recursive --timeout 30000"
+  },
+  "license": "Apache-2.0"
+}
