@@ -35,7 +35,7 @@
   },
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "mocha --compilers js:babel/register -R spec --ui bdd --recursive --timeout 30000"
+    "test": "gulp test"
   },
   "license": "Apache-2.0",
   "bugs": {
