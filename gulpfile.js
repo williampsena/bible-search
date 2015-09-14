@@ -34,7 +34,6 @@ gulp.task('test', function (cb) {
       timeout: 30000,
       compilers: 'js:babel/register'
     }))
-    .on('error', console.log.bind(console))
     .on('end', function () {
       cb(mochaErr);
     });
