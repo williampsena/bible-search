@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/media/mint/_apps/workspace/Files/github/bible-search',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /home/mint/.npm/bible-search/1.0.3/package.tgz not in flight; packing
+10 verbose tar pack [ '/home/mint/.npm/bible-search/1.0.3/package.tgz',
+10 verbose tar pack   '/media/mint/_apps/workspace/Files/github/bible-search' ]
+11 verbose tarball /home/mint/.npm/bible-search/1.0.3/package.tgz
+12 verbose folder /media/mint/_apps/workspace/Files/github/bible-search
+13 info prepublish bible-search@1.0.3
+14 verbose unsafe-perm in lifecycle true
+15 verbose addLocalTarball adding from inside cache /home/mint/.npm/bible-search/1.0.3/package.tgz
+16 silly cache afterAdd bible-search@1.0.3
+17 verbose afterAdd /home/mint/.npm/bible-search/1.0.3/package/package.json not in flight; writing
+18 verbose afterAdd /home/mint/.npm/bible-search/1.0.3/package/package.json written
+19 silly publish { name: 'bible-search',
+19 silly publish   version: '1.0.3',
+19 silly publish   description: 'A client Bible Search Api wrapper for NodeJs https://pt-br.bibles.org/pages/api',
+19 silly publish   homepage: 'http://www.coisadeprogramador.com.br',
+19 silly publish   repository:
+19 silly publish    { type: 'git',
+19 silly publish      url: 'git+https://github.com/williampsena/bible-search.git' },
+19 silly publish   author:
+19 silly publish    { name: 'William Sena',
+19 silly publish      email: 'williampsena@gmail.com',
+19 silly publish      url: 'www.coisadeprogramador.com.br' },
+19 silly publish   files: [ 'dist' ],
+19 silly publish   main: 'dist/index.js',
+19 silly publish   keywords: [ 'bible', 'api' ],
+19 silly publish   devDependencies:
+19 silly publish    { 'babel-core': '^5.5.0',
+19 silly publish      gulp: '^3.6.0',
+19 silly publish      'gulp-babel': '^5.1.0',
+19 silly publish      'gulp-esdoc': '0.0.4',
+19 silly publish      'gulp-eslint': '^0.15.0',
+19 silly publish      'gulp-exclude-gitignore': '^1.0.0',
+19 silly publish      'gulp-istanbul': '^0.9.0',
+19 silly publish      'gulp-jsdoc': '^0.1.4',
+19 silly publish      'gulp-mocha': '^2.0.0',
+19 silly publish      'gulp-nsp': '^0.4.5',
+19 silly publish      'gulp-plumber': '^1.0.0',
+19 silly publish      mocha: '^2.3.2',
+19 silly publish      q: '^1.4.1',
+19 silly publish      request: '^2.61.0',
+19 silly publish      should: '^7.1.0' },
+19 silly publish   scripts: { prepublish: 'gulp prepublish', test: 'gulp test' },
+19 silly publish   license: 'Apache-2.0',
+19 silly publish   bugs: { url: 'https://github.com/williampsena/bible-search/issues' },
+19 silly publish   directories: { test: 'test' },
+19 silly publish   dependencies: { request: '^2.61.0', q: '^1.4.1' },
+19 silly publish   readme: '# bible-search [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]\n> A client Bible Search Api wrapper for NodeJs https://pt-br.bibles.org/pages/api\n\n\n## Install\n\n```sh\n$ npm install --save bible-search\n```\n\n## Usage\n\n\n```js\nvar BibleSearch = require(\'bible-search\');\nvar bibleSearch = new BibleSearch(\'<<API KEY HERE>>\');\n\n//\n//ES6 Style\n//\nimport BibleSearch from \'blble-search\';\nvar bibleSearch = new BibleSearch(\'<<API KEY HERE>>\');\n\n//\n// Get books\n//\nbibleApi.book.getBooks().then((data) => {\n  //JSON Structure see: https://pt-br.bibles.org/pages/api/documentation/books \n}).catch(function (err) {\n  console.log(\'Ops! Sorry :|\');\n});\n\n//\n// Get passage\n//\nbibleApi.passage.getPassage({\n  book: \'rev\',\n  chapter: 21,\n  start: 4\n}).then(function (data) {\n  //JSON Structure see: https://pt-br.bibles.org/pages/api/documentation/passages\n}).catch(function (err) {\n  console.log(\'Ops! Sorry :|\');\n});\n\n//\n// Get book chapters\n//\nbibleApi.book.getChapters({\n  book: \'rev\'\n}).then(function (data) {\n  //JSON Structure see: https://pt-br.bibles.org/pages/api/documentation/chapters\n}).catch(function (err) {\n  console.log(\'Ops! Sorry :|\');\n});\n\n//\n// Get book verses\n//\nbibleApi.book.getVerses({\n  book: \'rev\',\n  chapter: 21\n}).then(function (data) {\n  //JSON Structure see: https://pt-br.bibles.org/pages/api/documentation/verses\n}).catch(function (err) {\n  console.log(\'Ops! Sorry :|\');\n});\n\n//\n// Search in the bible\n//\nbibleApi.search.find({\n  query: \'Pai nosso\'\n}).then(function (data) {\n  //JSON Structure see: https://pt-br.bibles.org/pages/api/documentation/search\n}).catch(function (err) {\n  console.log(\'Ops! Sorry :|\');\n});\n```\n\n## Test\n\nBefore you run tests, you must create a file named: config-auth.json, example:\n\n```\n{\n  "bibleApiKey": ""\n}\n```\n\n```\nnpm test\ngulp test\n```\n\n## Build\n\n```\ngulp\n```\n\nLib output: ./dist/\n\n## Generate ESDoc\n\n```\ngulp doc\n``` \n\nDocumentation output: ./dist/docs\n\n## License\n\nApache-2.0 © [William Sena](www.coisadeprogramador.com.br)\n\n[npm-image]: https://badge.fury.io/js/bible-search.svg\n[npm-url]: https://npmjs.org/package/bible-search\n[travis-image]: https://travis-ci.org/williampsena/bible-search.svg?branch=master\n[travis-url]: https://travis-ci.org/williampsena/bible-search\n[daviddm-image]: https://david-dm.org/williampsena/bible-search.svg?theme=shields.io\n[daviddm-url]: https://david-dm.org/williampsena/bible-search\n\n## TODO\n\n- Correct grammar mistakes! :)\n- Improve the documentation (ESDocs)\n- Support browserify\n- Refactoring ;)\n\n## Thanks :)\n\nhttps://github.com/yeoman/generator-node',
+19 silly publish   readmeFilename: 'README.md',
+19 silly publish   gitHead: 'c0da88420fa9c33eacce4022199bc2b6b019f959',
+19 silly publish   _id: 'bible-search@1.0.3',
+19 silly publish   _shasum: 'f590db995b0ecd4b40ac3f2a42f44f62dce7db21',
+19 silly publish   _from: '.' }
+20 verbose getPublishConfig undefined
+21 silly mapToRegistry name bible-search
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/bible-search
+25 verbose publish registryBase https://registry.npmjs.org/
+26 silly publish uploading /home/mint/.npm/bible-search/1.0.3/package.tgz
+27 verbose request uri https://registry.npmjs.org/bible-search
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 13:01:02
+30 verbose request using bearer token for auth
+31 verbose request id 462fe0a73ebea6e8
+32 http request PUT https://registry.npmjs.org/bible-search
+33 http 403 https://registry.npmjs.org/bible-search
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=60',
+34 verbose headers   'content-length': '95',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Sat, 19 Sep 2015 13:01:04 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-iad2124-IAD',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1442667663.335719,VS0,VE1087' }
+35 verbose request invalidating /home/mint/.npm/registry.npmjs.org/bible-search on PUT
+36 error publish Failed PUT 403
+37 verbose stack Error: "You cannot publish over the previously published version 1.0.3." : bible-search
+37 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+37 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+37 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:354:22)
+37 verbose stack     at Request.emit (events.js:110:17)
+37 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+37 verbose stack     at Request.emit (events.js:129:20)
+37 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+37 verbose stack     at IncomingMessage.emit (events.js:129:20)
+37 verbose stack     at _stream_readable.js:908:16
+37 verbose stack     at process._tickCallback (node.js:355:11)
+38 verbose statusCode 403
+39 verbose pkgid bible-search
+40 verbose cwd /media/mint/_apps/workspace/Files/github/bible-search
+41 error Linux 3.13.0-37-generic
+42 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+43 error node v0.12.7
+44 error npm  v2.11.3
+45 error code E403
+46 error "You cannot publish over the previously published version 1.0.3." : bible-search
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
