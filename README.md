@@ -109,6 +109,13 @@ gulp doc
 
 Documentation output: ./dist/docs
 
+## How to contribute
+
+Do you have any idea or found a bug ?
+
+[See how to contribute](CONTRIBUTING.md)
+
+
 ## License
 
 Apache-2.0 © [William Sena](www.coisadeprogramador.com.br)

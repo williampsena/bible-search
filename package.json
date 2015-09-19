@@ -8,6 +8,9 @@
     "url": "git+https://github.com/williampsena/bible-search.git"
   },
   "author": "William Sena <williampsena@gmail.com> (www.coisadeprogramador.com.br)",
+  "contributors": [
+    "William Sena <williampsena@gmail.com> (http://www.coisadeprogramador.com.br)"
+  ],
   "files": [
     "dist"
   ],
