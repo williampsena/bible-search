@@ -17,7 +17,7 @@ describe('Bible Api', () => {
   // Run for all tests
   //
   before('Before all tests', (done) => {
-    if(process.env.RunTests){
+    if (process.env.RunTests){
       bibleApiSettings = {
         bibleApiKey: process.env.BibleApiKey
       };
