@@ -22,7 +22,7 @@ describe('Bible Api', () => {
         bibleApiKey: process.env.BibleApiKey
       };
       done();
-    } else {    
+    } else {
       fs.readFile('config-auth.json', 'utf8', (err, data) => {
         should.not.exist(err);
         bibleApiSettings = JSON.parse(data);
