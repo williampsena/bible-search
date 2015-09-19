@@ -1,6 +1,6 @@
 {
   "name": "bible-search",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A client Bible Search Api wrapper for NodeJs https://pt-br.bibles.org/pages/api",
   "homepage": "http://www.coisadeprogramador.com.br",
   "repository": {
