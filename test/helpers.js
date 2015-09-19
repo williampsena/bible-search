@@ -21,7 +21,6 @@ describe('Bible Api', () => {
       bibleApiSettings = {
         bibleApiKey: process.env.BibleApiKey
       };
-      
       done();
     } else {    
       fs.readFile('config-auth.json', 'utf8', (err, data) => {
