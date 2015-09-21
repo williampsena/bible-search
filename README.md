@@ -118,7 +118,7 @@ Do you have any idea or found a bug ?
 
 ## License
 
-Apache-2.0 © [William Sena](www.coisadeprogramador.com.br)
+Apache-2.0 © [William Sena](http://www.coisadeprogramador.com.br)
 
 [npm-image]: https://badge.fury.io/js/bible-search.svg
 [npm-url]: https://npmjs.org/package/bible-search
