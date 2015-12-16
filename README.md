@@ -109,6 +109,10 @@ gulp doc
 
 Documentation output: ./dist/docs
 
+## Articles
+
+[See](http://www.coisadeprogramador.com.br/bible-search-cliente-para-bibles-org/)
+
 ## How to contribute
 
 Do you have any idea or found a bug ?
