@@ -111,7 +111,7 @@ Documentation output: ./dist/docs
 
 ## Articles
 
-[Step-by-step, see](http://www.coisadeprogramador.com.br/bible-search-cliente-para-bibles-org/)
+- [Step-by-step](http://www.coisadeprogramador.com.br/bible-search-cliente-para-bibles-org/)
 
 ## How to contribute
 
