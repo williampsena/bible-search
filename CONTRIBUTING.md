@@ -8,7 +8,6 @@
 
 - Before, you can contact by mail, github or social network.
   - e-mail: william@coisadeprogramador.com.br
-  - facebook: https://www.facebook.com/sena.william.br
   - twitter: https://twitter.com/williampsena
 
 ## Issues :hankey: or Greate Features :sunglasses:
