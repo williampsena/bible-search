@@ -1,4 +1,4 @@
-# bible-search [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][williampsena-image]][williampsena-url]
+# bible-search [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > A client Bible Search Api wrapper for NodeJs https://pt-br.bibles.org/pages/api
 
 
