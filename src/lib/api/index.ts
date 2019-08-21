@@ -1,5 +1,4 @@
 export * from './api'
-export * from './config'
 export * from './book'
 export * from './passage'
 export * from './search'

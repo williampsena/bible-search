@@ -23,6 +23,7 @@
     "@types/axios": "^0.14.0",
     "@types/jest": "^24.0.18",
     "colors": "^1.1.2",
+    "dotenv": "^8.1.0",
     "gulp-esdoc": "0.0.4",
     "jest": "^24.9.0",
     "ts-jest": "^24.0.2",
@@ -31,7 +32,8 @@
   },
   "scripts": {
     "prepublish": "gulp prepublish",
-    "start": "ts-node lib/index.ts"
+    "start": "ts-node lib/index.ts",
+    "test": "npx jest"
   },
   "license": "MIT",
   "bugs": {

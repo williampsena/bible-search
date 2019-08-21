@@ -1,4 +1,6 @@
-import { getPassage, getBooks, getChapters, getVerses, search, AppConfig } from './lib/api'
+import { getPassage, getBooks, getChapters, getVerses, search } from './lib/api'
+import { AppConfig } from './lib/utils/config'
+import { getVersions } from './lib/api/versions'
 
 /**
  * Bible API class.
@@ -31,5 +33,9 @@ export default class BibleApi {
 
   search = {
     find: (content: string) => search(this.apiKey, this.version, content),
+  }
+
+  bible = {
+    getVersions: () => getVersions(this.apiKey),
   }
 }

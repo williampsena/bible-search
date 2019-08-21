@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { AppConfig } from './config'
+import { AppConfig } from '../utils/config'
 
 /**
  * Get api client
@@ -14,9 +14,7 @@ export function getApiClient(apiKey: string) {
     baseURL: AppConfig.baseUrl,
     timeout: 3000,
     headers: {
-      auth: {
-        user: apiKey,
-      },
+      'api-key': apiKey,
     },
   })
 }
