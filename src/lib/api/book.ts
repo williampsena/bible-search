@@ -3,9 +3,9 @@ import { getApiClient } from './api'
 /**
  * Get bible books
  * @method
- * @param {string} apiKey - Authorization key
- * @param {string} version - Bible version (Default: por-NTLH).
- * @returns {Array} books
+ * @param apiKey - Authorization key
+ * @param version - Bible version (Default: por-NTLH).
+ * @returns books
  */
 export async function getBooks(apiKey: string, version: string) {
   if (!version) throw new Error('Version is required.')
@@ -18,10 +18,10 @@ export async function getBooks(apiKey: string, version: string) {
 /**
  * Get bible book chapters
  * @method
- * @param {string} apiKey - Authorization key
- * @param {string} book - Book title.
- * @param {string} version - Bible version (Default: por-NTLH).
- * @returns {Array} chapters
+ * @param apiKey - Authorization key
+ * @param book - Book title.
+ * @param version - Bible version (Default: por-NTLH).
+ * @returns chapters
  */
 export async function getChapters(apiKey: string, version: string, book: string) {
   if (!version) throw new Error('Version is required.')

@@ -1,11 +1,17 @@
 import axios from 'axios'
-import { Configs } from './config'
+import { AppConfig } from './config'
 
+/**
+ * Get api client
+ * @method
+ * @param apiKey - Authorization key
+ * @returns Api Client -> Axios Instance
+ */
 export function getApiClient(apiKey: string) {
   if (!apiKey) throw new Error('Api Key is required')
 
   return axios.create({
-    baseURL: Configs.baseUrl,
+    baseURL: AppConfig.baseUrl,
     timeout: 3000,
     headers: {
       auth: {

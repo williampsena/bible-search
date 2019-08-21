@@ -1,4 +1,4 @@
-import { getPassage, getBooks, getChapters, getVerses, search, Configs } from './lib/api'
+import { getPassage, getBooks, getChapters, getVerses, search, AppConfig } from './lib/api'
 
 /**
  * Bible API class.
@@ -15,7 +15,7 @@ export default class BibleApi {
    * @param apiKey - The Bible Search API Key.
    * @param version - The Bible Search Version
    */
-  constructor(private apiKey: string, private version: string = Configs.version) {}
+  constructor(private apiKey: string, private version: string = AppConfig.version) {}
 
   passage = {
     getPassage: (book: string, chapter: number, start: number, end?: number) =>
