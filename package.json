@@ -14,34 +14,22 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.ts",
   "keywords": [
     "bible",
     "api"
   ],
   "devDependencies": {
-    "babel-core": "^5.5.0",
+    "@types/axios": "^0.14.0",
     "colors": "^1.1.2",
-    "gulp": "^3.6.0",
-    "gulp-babel": "^5.1.0",
     "gulp-esdoc": "0.0.4",
-    "gulp-eslint": "^0.15.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.9.0",
-    "gulp-jsdoc": "^0.1.4",
-    "gulp-mocha": "^2.0.0",
-    "gulp-nsp": "^0.4.5",
-    "gulp-plumber": "^1.0.0",
-    "mocha": "^2.3.2",
-    "q": "^1.4.1",
-    "request": "^2.61.0",
-    "should": "^7.1.0"
+    "typedoc": "^0.15.0"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp test"
+    "start": "ts-node lib/index.ts"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/williampsena/bible-search/issues"
   },
@@ -49,7 +37,8 @@
     "test": "test"
   },
   "dependencies": {
-    "request": "^2.61.0",
-    "q": "^1.4.1"
+    "axios": "^0.19.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0"
   }
 }
