@@ -1,4 +1,5 @@
 import { getApiClient } from './api'
+import { checkRequired } from '../utils/validation'
 
 /**
  * Search content
@@ -11,8 +12,7 @@ import { getApiClient } from './api'
 export async function search(apiKey: string, version: string, content: string) {
   const axios = getApiClient(apiKey)
 
-  if (!version) throw new Error('Version is required.')
-  if (!content) throw new Error('Book is required.')
+  checkRequired({ version, content }, ['version', 'content'])
 
   const response = await axios.get(`version=${version}&query=${content}`)
 

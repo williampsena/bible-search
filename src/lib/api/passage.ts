@@ -1,4 +1,5 @@
 import { getApiClient } from './api'
+import { checkRequired } from '../utils/validation'
 
 /**
  * Get bible passages
@@ -21,11 +22,7 @@ export async function getPassage(
 ) {
   const axios = getApiClient(apiKey)
 
-  if (!version) throw new Error('Version is required.')
-  if (!book) throw new Error('Book is required.')
-  if (!chapter) throw new Error('Chapter is required.')
-  if (!start) throw new Error('Start is required.')
-  if (!end) throw new Error('End is required.')
+  checkRequired({ version, book, chapter, start }, ['version', 'book', 'chapter', 'start'])
 
   const passage = end ? `${start}-${end}` : start
   const query = `version=${version}&q[]=${book}+${chapter}:${passage}`
