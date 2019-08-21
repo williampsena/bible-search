@@ -35,13 +35,13 @@ export async function getChapters(apiKey: string, version: string, book: string)
 /**
  * Get bible book verses
  * @method
- * @param {string} apiKey - Authorization key
- * @param {string} book - Book title.
- * @param {string} chapter - Book chapter.
- * @param {string} version - Bible version (Default: por-NTLH).
- * @returns {Array} verses
+ * @param apiKey - Authorization key
+ * @param book - Book title.
+ * @param chapter - Book chapter.
+ * @param version - Bible version (Default: por-NTLH).
+ * @returns verses
  */
-export async function getVerses(apiKey: string, version: string, book: string, chapter: string) {
+export async function getVerses(apiKey: string, version: string, book: string, chapter: number) {
   if (!version) throw new Error('Version is required.')
   if (!book) throw new Error('Book is required.')
   if (!chapter) throw new Error('Chapter is required.')

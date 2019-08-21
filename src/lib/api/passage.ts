@@ -15,9 +15,9 @@ export async function getPassage(
   apiKey: string,
   version: string,
   book: string,
-  chapter: string,
-  start: string,
-  end?: string
+  chapter: number,
+  start: number,
+  end?: number
 ) {
   const axios = getApiClient(apiKey)
 
